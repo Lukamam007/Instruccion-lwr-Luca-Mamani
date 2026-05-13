@@ -9,3 +9,5 @@ Una vez adaptados los tamaños, el offset extendido y el valor actual del PC ing
 Un detalle crítico en esta etapa es la protección de la memoria: el pin de habilitación de escritura de la RAM se clavó en un `0` lógico. Como `LWR` es exclusivamente una instrucción de lectura, esto evita que el procesador sobrescriba o corrompa datos accidentalmente. 
 
 Finalmente, la RAM expone el valor solicitado a través de su pin `Data Out`. Si bien en el procesador terminado este bus viaja hacia el Banco de Registros (usando los 4 bits del rd para elegir el destino), en este módulo de prueba se conectó a un Display Hexadecimal de 16 bits. Esto permite aislar el circuito, alterar los inputs manualmente y verificar en tiempo real que la extracción de datos funciona a la perfección.
+
+https://circuitverse.org/users/413461/projects/lwr-luca-mamani
